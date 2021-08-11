@@ -1,5 +1,4 @@
 import random
-import time
 
 
 class Elevator:
@@ -11,14 +10,12 @@ class Elevator:
         while counter:
             token = counter - 1
             print(f'Going up {self.position + token}')
-            time.sleep(1)
             return self.go_up(token)
 
     def go_down(self, counter):
         while counter:
             token = counter - 1
             print(f'Going down {self.position + token}')
-            time.sleep(1)
             return self.go_down(token)
 
 
